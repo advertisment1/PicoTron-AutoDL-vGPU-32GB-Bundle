@@ -1,0 +1,15 @@
+init dataloader time: 10.10s
+init model parallel time: 1.38s
+Number of parameters: 70.56M
+[rank 0] Step: 1     | Loss: 11.0000 | Global batch size:  512.00 | Tokens/s:  199.16 | Tokens/s/GPU:  199.16 | Tokens:  512.00 | MFU:  0.01% | Memory usage:   0.78GB
+[rank 0] Step: 2     | Loss: 10.7969 | Global batch size:  512.00 | Tokens/s:   2.83K | Tokens/s/GPU:   2.83K | Tokens:   1.02K | MFU:  0.12% | Memory usage:   0.79GB
+[rank 0] Step: 3     | Loss: 10.5625 | Global batch size:  512.00 | Tokens/s:   2.38K | Tokens/s/GPU:   2.38K | Tokens:   1.54K | MFU:  0.10% | Memory usage:   0.79GB
+[rank 0] Step: 4     | Loss: 10.2969 | Global batch size:  512.00 | Tokens/s:   2.30K | Tokens/s/GPU:   2.30K | Tokens:   2.05K | MFU:  0.10% | Memory usage:   0.79GB
+[rank 0] Step: 5     | Loss: 10.0156 | Global batch size:  512.00 | Tokens/s:   2.41K | Tokens/s/GPU:   2.41K | Tokens:   2.56K | MFU:  0.10% | Memory usage:   0.79GB
+[rank 0] Step: 6     | Loss: 9.5000 | Global batch size:  512.00 | Tokens/s:   1.63K | Tokens/s/GPU:   1.63K | Tokens:   3.07K | MFU:  0.07% | Memory usage:   0.79GB
+[rank 0] Step: 7     | Loss: 9.1562 | Global batch size:  512.00 | Tokens/s:   2.37K | Tokens/s/GPU:   2.37K | Tokens:   3.58K | MFU:  0.10% | Memory usage:   0.79GB
+[rank 0] Step: 8     | Loss: 9.0000 | Global batch size:  512.00 | Tokens/s:   2.44K | Tokens/s/GPU:   2.44K | Tokens:   4.10K | MFU:  0.11% | Memory usage:   0.79GB
+[rank 0] Step: 9     | Loss: 8.4531 | Global batch size:  512.00 | Tokens/s:   2.42K | Tokens/s/GPU:   2.42K | Tokens:   4.61K | MFU:  0.10% | Memory usage:   0.79GB
+[rank 0] Step: 10    | Loss: 8.2656 | Global batch size:  512.00 | Tokens/s:   2.39K | Tokens/s/GPU:   2.39K | Tokens:   5.12K | MFU:  0.10% | Memory usage:   0.79GB
+[rank 0] Step: 11    | Loss: 8.2188 | Global batch size:  512.00 | Tokens/s:   2.36K | Tokens/s/GPU:   2.36K | Tokens:   5.63K | MFU:  0.10% | Memory usage:   0.79GB
+[rank 0] Step: 12    | Loss: 8.1562 | Global batch size:  512.00 | Tokens/s:   2.41K | Tokens/s/GPU:   2.41K | Tokens:   6.14K | MFU:  0.10% | Memory usage:   0.79GB

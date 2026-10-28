@@ -1,0 +1,1 @@
+config,repeat,gpu_model,torch_version,cuda_version,global_batch_tokens,step_time_ms,tokens_per_second_per_gpu,peak_allocated_gib,peak_reserved_gib,loss,notes

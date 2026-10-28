@@ -1,0 +1,7 @@
+NCCL version 2.27.3+cuda12.9
+[rank 1] dp: {'local_loss': 4.109582901000977, 'synced_grad': [[-1.3007895946502686, -1.41774582862854, -1.534701943397522, -1.651658058166504], [-1.2366998195648193, -1.347507357597351, -1.4583148956298828, -1.569122314453125]], 'serial_reference_error': 1.1920928955078125e-07, 'all_ranks_equal': True, 'pass_test': True}
+[rank 0] dp: {'local_loss': 0.08950655162334442, 'synced_grad': [[-1.3007895946502686, -1.41774582862854, -1.534701943397522, -1.651658058166504], [-1.2366998195648193, -1.347507357597351, -1.4583148956298828, -1.569122314453125]], 'serial_reference_error': 1.1920928955078125e-07, 'all_ranks_equal': True, 'pass_test': True}
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once

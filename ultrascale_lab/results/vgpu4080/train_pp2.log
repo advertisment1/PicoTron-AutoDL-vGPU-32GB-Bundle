@@ -1,0 +1,6 @@
+init dataloader time: 12.79s
+init model parallel time: 1.18s
+Number of parameters: 70.56M
+[rank 1] Step: 1     | Loss: 10.9531 | Global batch size:  512.00 | Tokens/s:  107.98 | Tokens/s/GPU:   53.99 | Tokens:  512.00 | MFU:  0.00% | Memory usage:   0.63GB
+[rank 1] Step: 2     | Loss: 10.7031 | Global batch size:  512.00 | Tokens/s:   4.64K | Tokens/s/GPU:   2.32K | Tokens:   1.02K | MFU:  0.10% | Memory usage:   0.64GB
+[rank 1] Step: 3     | Loss: 10.5938 | Global batch size:  512.00 | Tokens/s:   3.44K | Tokens/s/GPU:   1.72K | Tokens:   1.54K | MFU:  0.07% | Memory usage:   0.64GB

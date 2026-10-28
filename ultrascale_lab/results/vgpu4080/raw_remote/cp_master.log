@@ -1,0 +1,3 @@
+cp2 cfg ok: dp/tp/pp/cp = 1 1 1 2
+exit=0
+PEAK_MEM_MB=3458MiB

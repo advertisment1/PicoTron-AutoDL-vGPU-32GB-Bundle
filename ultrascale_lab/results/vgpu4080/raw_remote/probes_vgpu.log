@@ -1,0 +1,33 @@
+PyTorch: 2.8.0+cu128 CUDA: 12.8 GPU count: 2
+GPU 0 NVIDIA GeForce RTX 4080 SUPER bf16: True
+GPU 1 NVIDIA GeForce RTX 4080 SUPER bf16: True
+==== groups ====
+[rank 0] groups: {'rank': 0, 'local_rank': 0, 'grid': [[[[0]]], [[[1]]]], 'coordinate': [0, 0, 0, 0], 'dp_group_ids': [0, 1], 'tp_group_ids': [0], 'cp_group_ids': [0], 'pp_group_ids': [0]}
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1027 02:03:19.777050907 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank 1] groups: {'rank': 1, 'local_rank': 1, 'grid': [[[[0]]], [[[1]]]], 'coordinate': [1, 0, 0, 0], 'dp_group_ids': [0, 1], 'tp_group_ids': [1], 'cp_group_ids': [1], 'pp_group_ids': [1]}
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+NCCL version 2.27.3+cuda12.9
+[rank1]:[W1027 02:03:19.795252120 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+==== dp ====
+NCCL version 2.27.3+cuda12.9
+[rank 1] dp: {'local_loss': 4.109582901000977, 'synced_grad': [[-1.3007895946502686, -1.41774582862854, -1.534701943397522, -1.6516579389572144], [-1.2366998195648193, -1.347507357597351, -1.4583147764205933, -1.569122314453125]], 'serial_reference_error': 1.1920928955078125e-07, 'all_ranks_equal': True, 'pass_test': True}
+[rank 0] dp: {'local_loss': 0.08950655162334442, 'synced_grad': [[-1.3007895946502686, -1.41774582862854, -1.534701943397522, -1.6516579389572144], [-1.2366998195648193, -1.347507357597351, -1.4583147764205933, -1.569122314453125]], 'serial_reference_error': 1.1920928955078125e-07, 'all_ranks_equal': True, 'pass_test': True}
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+==== tp ====
+NCCL version 2.27.3+cuda12.9
+[rank 1] tp: {'input_shape': [2, 4], 'column_weight_shape': [4, 4], 'column_output_shape': [2, 4], 'row_weight_shape': [3, 4], 'final_output_shape': [2, 3], 'max_abs_error': 4.76837158203125e-07, 'pass_test': True}
+[rank 0] tp: {'input_shape': [2, 4], 'column_weight_shape': [4, 4], 'column_output_shape': [2, 4], 'row_weight_shape': [3, 4], 'final_output_shape': [2, 3], 'max_abs_error': 4.76837158203125e-07, 'pass_test': True}
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1027 02:03:31.273157377 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank0]:[W1027 02:03:31.273483895 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+
+Completed validated micro-tests. Full LLM training requires a separate compatibility check for RTX 2080 Ti.

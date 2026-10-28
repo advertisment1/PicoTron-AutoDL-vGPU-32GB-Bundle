@@ -1,0 +1,39 @@
+{
+  "rank": 0,
+  "local_rank": 0,
+  "grid": [
+    [
+      [
+        [
+          0
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          1
+        ]
+      ]
+    ]
+  ],
+  "coordinate": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "dp_group_ids": [
+    0,
+    1
+  ],
+  "tp_group_ids": [
+    0
+  ],
+  "cp_group_ids": [
+    0
+  ],
+  "pp_group_ids": [
+    0
+  ]
+}

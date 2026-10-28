@@ -1,0 +1,36 @@
+W1027 02:53:09.869000 8515 site-packages/torch/distributed/run.py:774] 
+W1027 02:53:09.869000 8515 site-packages/torch/distributed/run.py:774] *****************************************
+W1027 02:53:09.869000 8515 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1027 02:53:09.869000 8515 site-packages/torch/distributed/run.py:774] *****************************************
+rank 0: Creating tokenizer
+rank 0: Broadcasting tokenizer to all ranks
+Model HuggingFaceTB/SmolLM2-135M already exists at hf_model/HuggingFaceTB/SmolLM2-135M
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+init dataloader time: 8.87s
+rank 0: Creating model config
+rank 0: Broadcasting model_config to all ranks
+rank 1: Initializing model meta device
+rank 1: Warning: Checkpoint has 272 layers but model only has 136 layers.
+rank 0: Warning: Checkpoint has 272 layers but model only has 136 layers.
+init model parallel time: 1.62s
+Number of parameters: 161.17M
+/root/miniconda3/lib/python3.12/site-packages/torch/autograd/graph.py:829: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:179.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank 1] Step: 1     | Loss: 11.0000 | Global batch size:   8.19K | Tokens/s:   1.54K | Tokens/s/GPU:  768.21 | Tokens:   8.19K | MFU:  0.09% | Memory usage:   1.92GB
+[rank 1] Step: 2     | Loss: 10.1406 | Global batch size:   8.19K | Tokens/s:  16.73K | Tokens/s/GPU:   8.37K | Tokens:  16.38K | MFU:  1.00% | Memory usage:   2.32GB
+[rank 1] Step: 3     | Loss: 9.4844 | Global batch size:   8.19K | Tokens/s:  14.87K | Tokens/s/GPU:   7.43K | Tokens:  24.58K | MFU:  0.89% | Memory usage:   2.32GB
+[rank 1] Step: 4     | Loss: 9.0625 | Global batch size:   8.19K | Tokens/s:  14.82K | Tokens/s/GPU:   7.41K | Tokens:  32.77K | MFU:  0.88% | Memory usage:   2.32GB
+[rank 1] Step: 5     | Loss: 8.7344 | Global batch size:   8.19K | Tokens/s:  14.95K | Tokens/s/GPU:   7.47K | Tokens:  40.96K | MFU:  0.89% | Memory usage:   2.32GB
+[rank 1] Step: 6     | Loss: 8.4062 | Global batch size:   8.19K | Tokens/s:  15.01K | Tokens/s/GPU:   7.50K | Tokens:  49.15K | MFU:  0.89% | Memory usage:   2.32GB
+[rank 1] Step: 7     | Loss: 8.1562 | Global batch size:   8.19K | Tokens/s:  14.94K | Tokens/s/GPU:   7.47K | Tokens:  57.34K | MFU:  0.89% | Memory usage:   2.32GB
+[rank 1] Step: 8     | Loss: 7.8594 | Global batch size:   8.19K | Tokens/s:  15.01K | Tokens/s/GPU:   7.51K | Tokens:  65.54K | MFU:  0.89% | Memory usage:   2.32GB
+[rank 1] Step: 9     | Loss: 7.6484 | Global batch size:   8.19K | Tokens/s:  15.13K | Tokens/s/GPU:   7.56K | Tokens:  73.73K | MFU:  0.90% | Memory usage:   2.32GB
+[rank 1] Step: 10    | Loss: 7.4219 | Global batch size:   8.19K | Tokens/s:  14.99K | Tokens/s/GPU:   7.50K | Tokens:  81.92K | MFU:  0.89% | Memory usage:   2.32GB
+[rank 1] Step: 11    | Loss: 7.2031 | Global batch size:   8.19K | Tokens/s:  14.81K | Tokens/s/GPU:   7.41K | Tokens:  90.11K | MFU:  0.88% | Memory usage:   2.32GB
+[rank 1] Step: 12    | Loss: 6.9844 | Global batch size:   8.19K | Tokens/s:  14.97K | Tokens/s/GPU:   7.48K | Tokens:  98.30K | MFU:  0.89% | Memory usage:   2.32GB
+[rank 1] Step: 13    | Loss: 6.7891 | Global batch size:   8.19K | Tokens/s:  14.74K | Tokens/s/GPU:   7.37K | Tokens: 106.50K | MFU:  0.88% | Memory usage:   2.32GB
+[rank 1] Step: 14    | Loss: 6.6641 | Global batch size:   8.19K | Tokens/s:  14.72K | Tokens/s/GPU:   7.36K | Tokens: 114.69K | MFU:  0.88% | Memory usage:   2.32GB
+[rank 1] Step: 15    | Loss: 6.3828 | Global batch size:   8.19K | Tokens/s:  14.73K | Tokens/s/GPU:   7.37K | Tokens: 122.88K | MFU:  0.88% | Memory usage:   2.32GB

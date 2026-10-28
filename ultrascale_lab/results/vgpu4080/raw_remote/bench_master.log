@@ -1,0 +1,17 @@
+cfg single layers 30 seq 1024 mbs 2 gas 4
+cfg dp2 layers 30 seq 1024 mbs 2 gas 2
+cfg tp2 layers 30 seq 1024 mbs 2 gas 4
+cfg pp2 layers 30 seq 1024 mbs 2 gas 4
+===== BENCH single (nproc=1) =====
+exit=0
+PEAK_MEM_MB=5346MiB
+===== BENCH dp2 (nproc=2) =====
+exit=0
+PEAK_MEM_MB=4874MiB
+===== BENCH tp2 (nproc=2) =====
+exit=0
+PEAK_MEM_MB=4012MiB
+===== BENCH pp2 (nproc=2) =====
+exit=0
+PEAK_MEM_MB=3082MiB
+BENCH_ALL_DONE

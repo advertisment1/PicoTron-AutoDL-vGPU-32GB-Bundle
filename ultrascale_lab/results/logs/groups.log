@@ -1,0 +1,9 @@
+[rank 1] groups: {'rank': 1, 'local_rank': 1, 'grid': [[[[0]]], [[[1]]]], 'coordinate': [1, 0, 0, 0], 'dp_group_ids': [0, 1], 'tp_group_ids': [1], 'cp_group_ids': [1], 'pp_group_ids': [1]}
+[rank 0] groups: {'rank': 0, 'local_rank': 0, 'grid': [[[[0]]], [[[1]]]], 'coordinate': [0, 0, 0, 0], 'dp_group_ids': [0, 1], 'tp_group_ids': [0], 'cp_group_ids': [0], 'pp_group_ids': [0]}
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/root/miniconda3/lib/python3.12/site-packages/torch/distributed/distributed_c10d.py:4807: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W1027 00:26:18.797077236 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+[rank0]:[W1027 00:26:18.797097856 ProcessGroupNCCL.cpp:5023] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can specify device_id in init_process_group() to force use of a particular device.
+NCCL version 2.27.3+cuda12.9
